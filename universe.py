@@ -36,4 +36,6 @@ for i in range(num_steps):
     plt.xlim(-1e6, 1e6)
     plt.ylim(-1e6, 1e6)
     plt.title(f"Universe Simulation - Time Step {i}")
+    plt.xlabel("X Position (m)")
+    plt.ylabel("Y Position (m)")
     plt.pause(0.001)
