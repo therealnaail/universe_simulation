@@ -32,6 +32,8 @@ for i in range(num_steps):
     # Plot positions
     plt.clf()
     plt.scatter(positions[:, 0], positions[:, 1], s=masses / 1e10)
+    plt.gca().set_aspect('equal')
     plt.xlim(-1e6, 1e6)
     plt.ylim(-1e6, 1e6)
+    plt.title(f"Universe Simulation - Time Step {i}")
     plt.pause(0.001)
