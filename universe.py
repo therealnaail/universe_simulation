@@ -39,3 +39,4 @@ for i in range(num_steps):
     plt.xlabel("X Position (m)")
     plt.ylabel("Y Position (m)")
     plt.pause(0.001)
+    plt.savefig(f"universe_step_{i}.png")
