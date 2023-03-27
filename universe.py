@@ -5,7 +5,7 @@ print("Universe Simulation made by therealnaail \n")
 # Simulation parameters
 num_particles = 100
 G = 6.67e-11  # Gravitational constant
-timestep = int(input("Time Step:"))  # Simulation timestep
+timestep = float(input("Time Step:"))  # Simulation timestep 
 num_steps = int(input("Number of particles:"))  # Number of simulation steps
 
 # Initial conditions
