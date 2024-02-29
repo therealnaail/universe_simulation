@@ -29,9 +29,10 @@ for i in range(num_steps):
     positions += velocities * timestep
     velocities += accelerations * timestep
 
-    # Plot positions
+    # Plot positions and velocities
     plt.clf()
     plt.scatter(positions[:, 0], positions[:, 1], s=masses / 1e10)
+    plt.quiver(positions[:, 0], positions[:, 1], velocities[:, 0], velocities[:, 1], scale=1e5, color='red')
     plt.gca().set_aspect('equal')
     plt.xlim(-1e6, 1e6)
     plt.ylim(-1e6, 1e6)
